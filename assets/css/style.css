@@ -1,3 +1,109 @@
 body {
-    background-color: darkseagreen;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E3F2FD; 
+}
+
+header {
+    background-color: #48a9a6; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.titles {
+    padding: 20px;
+    text-align: center;
+    background-color: #FFF3E0; 
+    margin: 20px 0; 
+    border-radius: 10px; 
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    justify-content: center; 
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
+    object-fit: cover; 
+}
+
+nav {
+    background-color: #333; 
+    overflow: hidden;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    float: left;
+}
+
+.nav-links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    background-color: #4FC3F7;
+    color: black;
+}
+
+/* Clear floats after the columns */
+.nav-links:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Section styling */
+section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Section Image Styling */
+.section-image {
+    max-width: 100%; 
+    max-height: 300px; 
+    object-fit: cover; 
+    margin: 20px auto; 
+    display: block; 
+    border-radius: 8px; 
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-image:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease, filter 0.3s ease; 
+    filter: brightness(110%); 
+    
+}
+
+footer {
+    background-color: #263238; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
 }
